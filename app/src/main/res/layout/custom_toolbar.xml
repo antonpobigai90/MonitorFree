@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:padding="10sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Monitor Details"
+                android:textColor="#fff"
+
+                android:textSize="20sp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/ivPaused"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_toLeftOf="@+id/ivDelete"-->
+                <!--android:text="@string/fa_icon_pause" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/ivDelete"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:text="@string/fa_icon_delete" />-->
+
+            <ImageView
+                android:id="@+id/ivPaused"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:padding="7dp"
+                app:srcCompat="@drawable/pause" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="false"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="10dp"
+                android:padding="7dp"
+                app:srcCompat="@drawable/delete" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+</layout>

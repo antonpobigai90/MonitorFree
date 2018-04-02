@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="48dp"
+                android:text="MonitorFree"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="sign up to get access to MonitorFree"
+                android:textColor="#fff"
+                android:layout_below="@+id/textView0"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/textView"
+                app:hintTextAppearance="@style/MyAppearance">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="Full Name"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/MyAppearance"
+                android:layout_below="@+id/editText">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:passwordToggleEnabled="true"
+                app:hintTextAppearance="@style/MyAppearance"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/editText1">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:passwordToggleEnabled="true"
+                app:hintTextAppearance="@style/MyAppearance"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/editText2">
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/btn_round_border"
+                android:onClick="clickSignUp"
+                android:text="Register"
+                android:textColor="#fff"
+                android:layout_below="@+id/editText3"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fff"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="password"
+                    android:text="I have already MonitorFree Account?"
+                    android:textColor="@color/colorGrey2"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:onClick="clickSignUp"
+                    android:text="Log in here!"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="130dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

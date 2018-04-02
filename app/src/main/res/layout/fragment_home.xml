@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#454c50"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relAll"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relSubAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivMonitor"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13dp"
+
+                        app:srcCompat="@drawable/svgmonitor_hover" />
+
+                    <TextView
+                        android:id="@+id/txtAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivMonitor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10sp"
+                        android:text="ALL"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txtVwTotal"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_shape"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relDown"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relSubDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivDown"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="9dp"
+                        app:srcCompat="@drawable/svgic_arrow_downwtime_small" />
+
+                    <TextView
+                        android:id="@+id/txtDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivDown"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10sp"
+                        android:text="Down"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtVwDown"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_shape"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relUp"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relSubUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivUp"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/svgic_arrow_up" />
+
+                    <TextView
+                        android:id="@+id/txtUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivUp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10sp"
+                        android:text="Up"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtVwActive"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_shape"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relPaused"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relSubPause"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPaused"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="7dp"
+                        app:srcCompat="@drawable/svgic_pause" />
+
+                    <TextView
+                        android:id="@+id/txtPaused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivPaused"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10sp"
+                        android:text="Paused"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtVwPause"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_shape"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyVwMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topLayout">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/txtNoMonitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:text="No Monitors to show"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</layout>

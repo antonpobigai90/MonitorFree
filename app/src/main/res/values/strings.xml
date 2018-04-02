@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MonitorFree</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="facebook_app_id">147362655957106</string>
+    <string name="fb_login_protocol_scheme">fb147362655957106</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Monitor</string>
+    <string name="title_notifications">Settings</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="fa_icon_delete">&#xf1f8;</string>
+    <string name="fa_icon_pause">&#xf04c;</string>
+</resources>

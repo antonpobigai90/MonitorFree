@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey">
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Add new Monitor"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        app:srcCompat="@drawable/ic_monitor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="HTTP"
+                        android:textSize="20sp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        app:srcCompat="@drawable/ic_monitor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="Keyword"
+                        android:textSize="20sp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        app:srcCompat="@drawable/ic_monitor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="Ping"
+                        android:textSize="20sp"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        app:srcCompat="@drawable/ic_monitor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="Port"
+                        android:textSize="20sp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="See FAQs for more info"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "90573752384",
+    "project_id": "demotest-196816"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90573752384:android:d70dd7a2ac01cd89",
+        "android_client_info": {
+          "package_name": "com.monitorfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90573752384-r00nb6vcq63ejcr2qj3f3l4stdqb3qkm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "90573752384-41f632ti0tv4sqvpsv6j4jcj0r5jdlnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monitorfree",
+            "certificate_hash": "9e88085cebf79a0b27cd63c588aeb43c39423100"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqpqlD0KxSuvXKujZlXQ5ttKlRwOc5Rtc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

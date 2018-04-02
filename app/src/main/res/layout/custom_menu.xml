@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutMenu"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20sp"
+                android:background="#EAEFF2"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgVwUserProfile"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:src="#FFF" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgVwUserProfile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="clickMenu"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mail.com" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_chevron_right_black_24dp" />
+
+                </LinearLayout>
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--andridd:idid@+id/txtVwMenuUserName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="10sp"-->
+                <!--android:layout_marginRight="10sp"-->
+                <!--android:layout_marginTop="15sp"-->
+                <!--android:layout_toLeftOfid@+id/txtVwUserType"-->
+                <!--android:layout_toRightOfid@+id/imgVwUserProfile"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="John Smith"-->
+                <!---->
+                <!--android:textSize="18sp" />-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--andridd:idid@+id/txtVwMenuUserProfession"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_belowid@+id/txtVwMenuUserName"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="10sp"-->
+                <!--android:layout_marginRight="10sp"-->
+                <!--android:layout_toLeftOfid@+id/txtVwUserType"-->
+                <!--android:layout_toRightOfid@+id/imgVwUserProfile"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="Developer"-->
+
+                <!--android:textSize="12sp" />-->
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/addMonitor"
+                style="@style/menuItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_monitor_drawer"
+                android:onClick="clickMenu"
+                android:text="Add new monitor"
+                android:textColor="@color/colorBlue"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/txtVwQ"
+                style="@style/menuItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_help_outline"
+                android:onClick="clickMenu"
+                android:text="Frequently Asked Questions"
+                android:textColor="@color/colorBlue"
+                android:textSize="17sp" />
+
+            <TextView
+                style="@style/menuItems"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorGrey2" />
+
+
+            <TextView
+                android:id="@+id/txtVwLogout"
+                style="@style/menuItems"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/btn_round_border"
+                android:gravity="center"
+                android:onClick="clickMenu"
+                android:text="Logout"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
